@@ -1,0 +1,10 @@
+classTweaker  v1  official
+
+inject-interface  net/minecraft/world/item/Item  arr/armuriii/penumbra/interfaces/PropertiesItem
+
+accessible method net/minecraft/world/item/Item$Properties finalizeInitializer (Lnet/minecraft/network/chat/Component;Lnet/minecraft/resources/Identifier;)Lnet/minecraft/core/component/DataComponentInitializers$Initializer;
+
+accessible field net/minecraft/world/item/Item descriptionId Ljava/lang/String;
+mutable field net/minecraft/world/item/Item descriptionId Ljava/lang/String;
+
+accessible method net/minecraft/world/item/Item$Properties effectiveDescriptionId ()Ljava/lang/String;

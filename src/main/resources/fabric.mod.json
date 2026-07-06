@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "penumbra-necrotic",
+	"version": "${version}",
+	"name": "Penumbra Necrotic",
+	"description": "Decoration mod...",
+	"authors": [
+		"ARMURIII - alias ARR",
+		"Watt",
+		"Kindling"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/penumbra-necrotic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"arr.armuriii.penumbra.PenumbraNecrotic"
+		],
+		"client": [
+			"arr.armuriii.penumbra.client.PenumbraNecroticClient"
+		],
+		"fabric-datagen": [
+          "arr.armuriii.penumbra.datagen.PenumbraNecroticDataGenerator"
+		]
+	},
+	"mixins": [
+		"penumbra-necrotic.mixins.json"
+	],
+	"accessWidener": "penumbra-necrotic.classtweaker",
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
