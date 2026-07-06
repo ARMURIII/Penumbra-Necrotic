@@ -1,4 +1,4 @@
-package arr.armuriii.penumbra.interfaces;
+package arr.armuriii.reg.interfaces;
 
 import net.minecraft.world.item.Item;
 

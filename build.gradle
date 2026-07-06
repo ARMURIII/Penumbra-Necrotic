@@ -18,6 +18,12 @@ fabricApi {
 
 loom {
 	accessWidenerPath = file("src/main/resources/penumbra-necrotic.classtweaker")
+	runs {
+		client {
+			getProgramArguments().addAll(["--username", "ARMURIII", "--uuid", "ad2a475c-a11e-42dc-bc0c-e4a5cc57c769"])
+			getJvmArguments().add("-Dsodium.checks.issue2561=false")
+		}
+	}
 }
 
 dependencies {

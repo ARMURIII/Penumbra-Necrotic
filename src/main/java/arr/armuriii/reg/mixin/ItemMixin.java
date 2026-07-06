@@ -1,6 +1,6 @@
-package arr.armuriii.penumbra.mixin;
+package arr.armuriii.reg.mixin;
 
-import arr.armuriii.penumbra.interfaces.PropertiesItem;
+import arr.armuriii.reg.interfaces.PropertiesItem;
 import com.llamalad7.mixinextras.injector.ModifyReceiver;
 import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;

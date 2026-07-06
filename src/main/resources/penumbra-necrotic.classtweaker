@@ -1,6 +1,12 @@
-classTweaker  v1  official
+classTweaker  v2  official
 
-inject-interface  net/minecraft/world/item/Item  arr/armuriii/penumbra/interfaces/PropertiesItem
+transitive-inject-interface  net/minecraft/world/item/Rarity  arr/armuriii/penumbra/interfaces/StyleRarity
+
+transitive-extend-enum net/minecraft/world/item/Rarity PENUMBRA_NECROTIC_PENUMBRA
+
+inject-interface net/minecraft/world/item/Item  arr/armuriii/reg/interfaces/PropertiesItem
+
+inject-interface  net/minecraft/world/level/block/state/BlockBehaviour  arr/armuriii/reg/interfaces/PropertiesBlockBehaviour
 
 accessible method net/minecraft/world/item/Item$Properties finalizeInitializer (Lnet/minecraft/network/chat/Component;Lnet/minecraft/resources/Identifier;)Lnet/minecraft/core/component/DataComponentInitializers$Initializer;
 
@@ -8,3 +14,11 @@ accessible field net/minecraft/world/item/Item descriptionId Ljava/lang/String;
 mutable field net/minecraft/world/item/Item descriptionId Ljava/lang/String;
 
 accessible method net/minecraft/world/item/Item$Properties effectiveDescriptionId ()Ljava/lang/String;
+
+accessible field net/minecraft/world/level/block/state/BlockBehaviour drops Ljava/util/Optional;
+mutable field net/minecraft/world/level/block/state/BlockBehaviour drops Ljava/util/Optional;
+accessible field net/minecraft/world/level/block/state/BlockBehaviour descriptionId Ljava/lang/String;
+mutable field net/minecraft/world/level/block/state/BlockBehaviour descriptionId Ljava/lang/String;
+
+accessible method net/minecraft/world/level/block/state/BlockBehaviour$Properties effectiveDrops ()Ljava/util/Optional;
+accessible method net/minecraft/world/level/block/state/BlockBehaviour$Properties effectiveDescriptionId ()Ljava/lang/String;

@@ -17,7 +17,7 @@ public interface ItemRegisterInitializer extends ModRegisterInitializer<Item> {
     }
 
     @Override
-    default Item onRegister(Item instance, ResourceKey<Item> key, Identifier id) {
+    default Item modifyEntry(Item instance, ResourceKey<Item> key, Identifier id) {
         instance.PN$getProperties().setId(key);
 
         instance.descriptionId = instance.PN$getProperties().effectiveDescriptionId();

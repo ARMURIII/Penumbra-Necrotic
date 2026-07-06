@@ -9,10 +9,12 @@ import java.lang.annotation.Target;
 @Target({ElementType.TYPE})
 public @interface RegModule {
     String modid();
+    int priority() default 1000;
 
     @Retention(RetentionPolicy.RUNTIME)
     @Target({ElementType.FIELD})
     @interface RegistryEntry {
         String id() default "";
+        String[] params() default {};
     }
 }
